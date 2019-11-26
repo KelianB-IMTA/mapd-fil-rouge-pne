@@ -32,4 +32,18 @@ public interface IPetriNet {
 	 */
 	public boolean removeTransition(Transition t);
 	
+	/**
+	 * Removes the given place from this network
+	 * @param p the place to remove
+	 * @return whether or not the place was successfully removed
+	 */
+	public boolean removePlace(Place p);
+	
+	/**
+	 * Removes the given arc from this network
+	 * @param a the arc to remove
+	 * @return whether or not the arc was successfully removed
+	 */
+	public boolean removeArc(Arc a);
+	
 }

@@ -27,4 +27,16 @@ public class TransitionAdapter extends AbstractTransition {
 		}
 	}
 	
+	Transition getModelObject() {
+		return this.transition;
+	}
+
+	public boolean isEnabled() {
+		return this.transition.canFire();
+	}
+	
+	public void fire() {
+		this.transition.fire();
+	}
+	
 }

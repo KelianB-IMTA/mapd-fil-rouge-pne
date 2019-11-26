@@ -39,7 +39,6 @@ public class PlaceAdapter extends AbstractPlace {
 			try {
 				place.removeTokens(tokens - getTokens());
 			} catch (NegativePlaceTokenException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}

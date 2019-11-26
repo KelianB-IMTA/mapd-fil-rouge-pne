@@ -60,6 +60,47 @@ public class PetriNet implements IPetriNet {
 	}
 	
 	/**
+	 * See IPetriNet.removePlace
+	 */
+	@Override
+	public boolean removePlace(Place p) {
+		boolean wasRemoved = true;
+		for(Transition t : this.getTransitions()) {
+			for(int i = 0; i < t.getArcs().size(); i++) {
+				Arc arc = t.getArcs().get(i);
+				if(arc.getPlace().equals(p)) {
+					arc.getPlace().empty();
+					if(t.removeArc(arc))
+						i--;
+					else
+						wasRemoved = false;
+				}
+			}
+		}
+		return wasRemoved;
+	}
+
+	/**
+	 * See IPetriNet.removeArc
+	 */
+	@Override
+	public boolean removeArc(Arc a) {
+		boolean wasRemoved = true;
+		for(Transition t : this.getTransitions()) {
+			for(int i = 0; i < t.getArcs().size(); i++) {
+				Arc arc = t.getArcs().get(i);
+				if(arc.equals(a)) {
+					if(t.removeArc(arc))
+						i--;
+					else
+						wasRemoved = false;
+				}
+			}
+		}
+		return wasRemoved;
+	}
+	
+	/**
 	 * See IPetriNet.fireAll
 	 */
 	@Override

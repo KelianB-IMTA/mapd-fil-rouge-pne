@@ -20,7 +20,6 @@ public class ArcAdapter extends AbstractArc {
 		this.type = type;
 		this.place = pl;
 		this.transition = tr;
-		transition.addArc(this);
 		try {
 			if(type == ArcType.IN)
 				this.arc = new ArcIn(pl.getModelObject(), 0);
@@ -33,6 +32,7 @@ public class ArcAdapter extends AbstractArc {
 		} catch (NegativeArcValueException e) {
 			e.printStackTrace();
 		}
+		this.transition.addArc(this);
 	}
 	
 	@Override
