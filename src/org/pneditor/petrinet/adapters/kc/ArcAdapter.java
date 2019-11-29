@@ -7,8 +7,8 @@ import org.pneditor.petrinet.models.kc.Arc;
 import org.pneditor.petrinet.models.kc.ArcIn;
 import org.pneditor.petrinet.models.kc.ArcOut;
 import org.pneditor.petrinet.models.kc.InhibitorArc;
-import org.pneditor.petrinet.models.kc.NegativeArcValueException;
 import org.pneditor.petrinet.models.kc.ResetArc;
+import org.pneditor.petrinet.models.kc.exceptions.NegativeArcValueException;
 
 public class ArcAdapter extends AbstractArc {
 	private Arc arc;

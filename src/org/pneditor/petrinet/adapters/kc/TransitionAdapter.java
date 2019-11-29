@@ -1,10 +1,10 @@
 package org.pneditor.petrinet.adapters.kc;
 
 import org.pneditor.petrinet.AbstractTransition;
-import org.pneditor.petrinet.models.kc.ArcAlreadyExistsException;
 import org.pneditor.petrinet.models.kc.PetriNet;
 import org.pneditor.petrinet.models.kc.Transition;
-import org.pneditor.petrinet.models.kc.TransitionAlreadyExistsException;
+import org.pneditor.petrinet.models.kc.exceptions.ArcAlreadyExistsException;
+import org.pneditor.petrinet.models.kc.exceptions.TransitionAlreadyExistsException;
 
 public class TransitionAdapter extends AbstractTransition {
 	private Transition transition;

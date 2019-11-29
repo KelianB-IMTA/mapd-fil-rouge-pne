@@ -3,6 +3,9 @@ package org.pneditor.petrinet.models.kc;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.pneditor.petrinet.models.kc.exceptions.ArcAlreadyExistsException;
+import org.pneditor.petrinet.models.kc.exceptions.NegativePlaceTokenException;
+
 /**
  * Represents a transition in a Petri Net. Transitions contain input and output arcs and can be fired.
  */

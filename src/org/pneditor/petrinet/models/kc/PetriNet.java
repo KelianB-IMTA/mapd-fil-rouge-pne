@@ -3,6 +3,8 @@ package org.pneditor.petrinet.models.kc;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.pneditor.petrinet.models.kc.exceptions.TransitionAlreadyExistsException;
+
 /**
  * Implementation of IPetriNet. Represents a basic Petri Net.
  */

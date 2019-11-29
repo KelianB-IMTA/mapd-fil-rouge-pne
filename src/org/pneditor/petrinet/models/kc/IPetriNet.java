@@ -2,6 +2,8 @@ package org.pneditor.petrinet.models.kc;
 
 import java.util.List;
 
+import org.pneditor.petrinet.models.kc.exceptions.TransitionAlreadyExistsException;
+
 /**
  * The main interface for representing a Petri Net.
  */

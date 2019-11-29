@@ -1,4 +1,4 @@
-package org.pneditor.petrinet.models.kc;
+package org.pneditor.petrinet.models.kc.exceptions;
 
 /**
  * Exception thrown when trying to create an arc with a negative value.

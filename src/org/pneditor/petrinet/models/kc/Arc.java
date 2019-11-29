@@ -1,5 +1,8 @@
 package org.pneditor.petrinet.models.kc;
 
+import org.pneditor.petrinet.models.kc.exceptions.NegativeArcValueException;
+import org.pneditor.petrinet.models.kc.exceptions.NegativePlaceTokenException;
+
 /**
  * Represents an arc of a Petri Net.
  */

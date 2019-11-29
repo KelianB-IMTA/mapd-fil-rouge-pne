@@ -1,4 +1,4 @@
-package org.pneditor.petrinet.models.kc;
+package org.pneditor.petrinet.models.kc.exceptions;
 
 /**
  * Exception thrown when trying to set a place's tokens to a negative value.

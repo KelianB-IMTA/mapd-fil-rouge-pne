@@ -1,4 +1,4 @@
-package org.pneditor.petrinet.models.kc;
+package org.pneditor.petrinet.models.kc.exceptions;
 
 /**
  * Exception thrown when trying to add the same transition twice to a Petri Net.

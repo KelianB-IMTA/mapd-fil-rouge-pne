@@ -1,5 +1,7 @@
 package org.pneditor.petrinet.models.kc;
 
+import org.pneditor.petrinet.models.kc.exceptions.NegativePlaceTokenException;
+
 /**
  * Represents a place in a Petri Net. Places contain a token value, which can increase or decrease when adjacent transitions are fired.
  */

@@ -1,4 +1,4 @@
-package org.pneditor.petrinet.models.kc;
+package org.pneditor.petrinet.models.kc.exceptions;
 
 /**
  * Exception thrown when trying to add the same arc twice to the same transition.

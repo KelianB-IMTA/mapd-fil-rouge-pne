@@ -1,5 +1,7 @@
 package org.pneditor.petrinet.models.kc;
 
+import org.pneditor.petrinet.models.kc.exceptions.NegativeArcValueException;
+
 /**
  * Represents an arc going into a place.
  */

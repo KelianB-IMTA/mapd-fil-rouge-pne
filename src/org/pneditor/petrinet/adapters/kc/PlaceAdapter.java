@@ -1,8 +1,8 @@
 package org.pneditor.petrinet.adapters.kc;
 
 import org.pneditor.petrinet.AbstractPlace;
-import org.pneditor.petrinet.models.kc.NegativePlaceTokenException;
 import org.pneditor.petrinet.models.kc.Place;
+import org.pneditor.petrinet.models.kc.exceptions.NegativePlaceTokenException;
 
 public class PlaceAdapter extends AbstractPlace {
 	private Place place;
